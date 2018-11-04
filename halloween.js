@@ -3,7 +3,6 @@
 // MEDIUM	#7bc96f -> #ffc501
 // LIGHT 	#c6e48b -> #ffee4a	
 // NONE 	#ebedf0 -> #eeeeee
-
 document.querySelectorAll('rect.day[fill="#196127"]')
 .forEach((el) => {
 	el.setAttribute("fill", "#03001c")
@@ -35,8 +34,23 @@ document.querySelectorAll('.js-highlight-blob[fill="#7bc96f"]')
 	el.setAttribute("stroke", "#ffc501")
 });
 
-// document.querySelectorAll('.legend li["style"="background-color: #196127"]')
-// .forEach((el) => {
-// 	el.setAttribute("fill", "#03001c")
-// });	
+//get the li tags under the .legend class
+var legend = document.querySelectorAll('ul.legend > li');
 
+for (var i = 0; i < lis.length; i++) {
+    if (i==0) {
+      lis[i].style.backgroundColor = '#eeeeee';
+    } 
+    else if (i==1){
+      lis[i].style.backgroundColor = '#ffee4a';
+    }
+    else if (i==2) {
+      lis[i].style.backgroundColor = '#ffc501';
+    }
+    else if (i==3) {
+      lis[i].style.backgroundColor = '#fe9600';
+    }
+    else if (i==4) {
+      lis[i].style.backgroundColor = '#03001c';
+    }
+}
