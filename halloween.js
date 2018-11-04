@@ -37,20 +37,32 @@ document.querySelectorAll('.js-highlight-blob[fill="#7bc96f"]')
 //get the li tags under the .legend class
 var legend = document.querySelectorAll('ul.legend > li');
 
-for (var i = 0; i < lis.length; i++) {
+for (var i = 0; i < legend.length; i++) {
     if (i==0) {
-      lis[i].style.backgroundColor = '#eeeeee';
+      legend[i].style.backgroundColor = '#eeeeee';
     } 
     else if (i==1){
-      lis[i].style.backgroundColor = '#ffee4a';
+      legend[i].style.backgroundColor = '#ffee4a';
     }
     else if (i==2) {
-      lis[i].style.backgroundColor = '#ffc501';
+      legend[i].style.backgroundColor = '#ffc501';
     }
     else if (i==3) {
-      lis[i].style.backgroundColor = '#fe9600';
+      legend[i].style.backgroundColor = '#fe9600';
     }
     else if (i==4) {
-      lis[i].style.backgroundColor = '#03001c';
+      legend[i].style.backgroundColor = '#03001c';
     }
+}
+
+//For the axis of the graph
+var axis = document.querySelectorAll('.activity-overview-axis')
+for(let i=0; i<axis.length; i++){
+	axis[i].style.stroke = "fe9600"
+}
+
+//For the points on the graph
+var point = document.querySelectorAll('.activity-overview-point')
+for(let i=0; i<point.length; i++){
+	point[i].style.stroke = "fe9600"
 }
