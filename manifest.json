@@ -3,23 +3,23 @@
 	"description": "Halloween themed git-contributions!",
 	"browser_action": {
         "default_icon": {
-            "16": "icons/16.png",
-            "32": "icons/32.png",
-            "48": "icons/48.png",
-            "64": "icons/64.png",
-            "128": "icons/128.png",
-            "1024": "icons/1024.png"
+            "16": "images/icon.png",
+            "32": "images/icon.png",
+            "48": "images/icon.png",
+            "64": "images/icon.png",
+            "128": "images/icon.png",
+            "1024": "images/icon.png"
         },
         "default_title": "spooky-git",
         "default_popup": "popup.html"
         },
   "icons": {
-      "16": "icons/16.png",
-      "32": "icons/32.png",
-      "48": "icons/48.png",
-      "64": "icons/64.png",
-      "128": "icons/128.png",
-      "1024": "icons/1024.png"
+        "16": "images/icon.png",
+        "32": "images/icon.png",
+        "48": "images/icon.png",
+        "64": "images/icon.png",
+        "128": "images/icon.png",
+        "1024": "images/icon.png"
     },
 	"manifest_version": 2,
 	"version": "1.0.0",
